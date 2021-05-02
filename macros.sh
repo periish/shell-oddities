@@ -5,7 +5,7 @@
 # They cannot take arguments, but it works fine for menial stuff, such as setting a variable to $1, then immediately shifting.
 
 defmacro () {
-    body=:
+    body=;
     while read -r line; do
         body="$body; $line"
     done
